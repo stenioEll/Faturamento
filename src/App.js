@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from "./pages/Home";
 import Unimed from './pages/Unimed';
 import UnimedCad from './pages/Cadastros/UnimedCad';
+import UnimedConsul from './pages/Consultas/UnimedConsul';
 
 
 
@@ -19,6 +20,7 @@ function App() {
                     <Route exact path="/faturamento" element={<Home/>} /> 
                     <Route exact path="/faturamento/unimed" element={<Unimed/>} />
                     <Route exact path="/faturamento/unimed/cadastro" element={<UnimedCad/>} />
+                    <Route exact path="/faturamento/unimed/consulta" element={<UnimedConsul/>} />
                 </Routes>
             </Router>
         </div>
